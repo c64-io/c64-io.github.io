@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="006141ea-a0c0-4678-96b4-f7025c89054c" name="Changes" comment="ok its here">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.landscape.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2025/01/10/hello-world/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/2025/01/10/hello-world/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2025/01/10/page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/2025/01/10/page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/about-me/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about-me/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/2025/01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/archives/2025/01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/2025/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/archives/2025/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/archives/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/base/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/base/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/archive.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/archive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/article.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/categories.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/icon.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/syntax.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/syntax.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/components/tags.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icon-heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/icon-heart.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/page.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Hacker/CHANGELOG_zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Hacker/README_zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Hacker/_config.example.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Hacker/languages/zh-CN.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +86,7 @@
       <workItem from="1736521809566" duration="889000" />
       <workItem from="1736547710918" duration="5000" />
       <workItem from="1736568412453" duration="1854000" />
-      <workItem from="1736623509037" duration="1909000" />
+      <workItem from="1736623509037" duration="3965000" />
     </task>
     <task id="LOCAL-00001" summary="ok its here">
       <option name="closed" value="true" />
