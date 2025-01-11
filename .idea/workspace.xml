@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="006141ea-a0c0-4678-96b4-f7025c89054c" name="Changes" comment="ok its here">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/pages.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/2025/01/10/hello-world/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/source/CNAME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/about-me/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/archives/2025/01/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/archives/2025/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/archives/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/base/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/archive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/article.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/categories.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/pagination.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/syntax.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/components/tags.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/icon-heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/hello-world.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/hello-world.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +82,7 @@
       <workItem from="1736521809566" duration="889000" />
       <workItem from="1736547710918" duration="5000" />
       <workItem from="1736568412453" duration="1854000" />
-      <workItem from="1736623509037" duration="6203000" />
+      <workItem from="1736623509037" duration="7028000" />
     </task>
     <task id="LOCAL-00001" summary="ok its here">
       <option name="closed" value="true" />
