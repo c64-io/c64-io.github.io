@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'en' %>">
+<%- partial('components/head') %>
+<body class="<%= theme.crt && theme.crt.scanlines ? 'crt-scanlines ' : '' %><%= theme.crt && theme.crt.glow ? 'crt-glow ' : '' %><%= theme.crt && theme.crt.vignette ? 'crt-vignette ' : '' %><%= theme.crt && theme.crt.flicker ? 'crt-flicker' : '' %>">
+  <div class="screen">
+    <%- partial('components/header') %>
+    <main class="site-main">
+      <%- body %>
+    </main>
+    <%- partial('components/footer') %>
+  </div>
+</body>
+</html>

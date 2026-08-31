@@ -1,0 +1,29 @@
+<div class="listing-head"><span class="prompt">$</span> ls <%= listPath %></div>
+
+<ul class="postlist">
+<% posts.each(function(item){ %>
+  <%
+    var blurb = '';
+    if (theme.index_excerpts) {
+      // Prose only — code blocks make for lousy one-line summaries.
+      var raw = (item.excerpt || item.content || '')
+        .replace(/<figure[\s\S]*?<\/figure>/g, ' ')
+        .replace(/<pre[\s\S]*?<\/pre>/g, ' ');
+      blurb = strip_html(raw)
+        .replace(/&#x([0-9a-fA-F]+);/g, function(m, h){ return String.fromCharCode(parseInt(h, 16)); })
+        .replace(/&#(\d+);/g, function(m, d){ return String.fromCharCode(parseInt(d, 10)); })
+        .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+        .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
+        .replace(/\s+/g, ' ').trim();
+      if (blurb.length > 200) blurb = blurb.substring(0, 200).replace(/\s\S*$/, '') + '…';
+    }
+  %>
+  <li class="postlist-item">
+    <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+    <a class="postlist-title" href="<%- url_for(item.path) %>"><%= item.title %></a>
+    <% if (blurb){ %><div class="postlist-excerpt"><%= blurb %></div><% } %>
+  </li>
+<% }); %>
+</ul>
+
+<% if (!posts.length){ %><p class="dim">no entries.</p><% } %>

@@ -4,33 +4,33 @@ on:
   push:
     branches:
       - main # default branch
+  workflow_dispatch: # allows a manual rebuild from the Actions tab
+
+# Let a running deploy finish rather than racing it, but never queue more than one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
-          submodules: recursive
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
           # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
           # Ref: https://github.com/actions/setup-node#supported-version-syntax
           node-version: "20"
-      - name: Cache NPM dependencies
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
+          cache: npm # caches ~/.npm, keyed on package-lock.json
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
       - name: Build
         run: npm run build
+      - name: Sanity-check build
+        # A missing or broken theme makes Hexo emit empty files and still exit 0.
+        run: |
+          test -s public/index.html || { echo "::error::public/index.html is empty — is the theme missing?"; exit 1; }
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

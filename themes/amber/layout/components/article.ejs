@@ -1,0 +1,7 @@
+<article class="post">
+  <h1 class="post-title"><%= item.title %></h1>
+  <% if (item.date && item.layout === 'post'){ %><%- partial('components/meta', {item: item}) %><% } %>
+  <div class="entry">
+    <%- item.content %>
+  </div>
+</article>

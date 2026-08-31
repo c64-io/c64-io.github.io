@@ -1,0 +1,8 @@
+<%
+var heading = 'archives';
+var listPath = '~/posts';
+if (page.year) { heading = page.year + (page.month ? '/' + (page.month < 10 ? '0' + page.month : page.month) : ''); listPath = '~/posts/' + heading; }
+%>
+<h1 class="page-title"><%= heading %></h1>
+<%- partial('components/postlist', {posts: page.posts, listPath: listPath}) %>
+<%- partial('components/pagination') %>

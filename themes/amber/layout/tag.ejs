@@ -1,0 +1,3 @@
+<h1 class="page-title">#<%= page.tag %></h1>
+<%- partial('components/postlist', {posts: page.posts, listPath: '~/tags/' + page.tag}) %>
+<%- partial('components/pagination') %>

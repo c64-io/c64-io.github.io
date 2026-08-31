@@ -1,0 +1,7 @@
+<%- partial('components/article', {item: page}) %>
+<% if (page.prev || page.next){ %>
+<nav class="post-nav">
+  <% if (page.prev){ %><a class="nav-prev" href="<%- url_for(page.prev.path) %>">&lt;&lt; <%= page.prev.title %></a><% } %>
+  <% if (page.next){ %><a class="nav-next" href="<%- url_for(page.next.path) %>"><%= page.next.title %> &gt;&gt;</a><% } %>
+</nav>
+<% } %>

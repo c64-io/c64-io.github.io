@@ -1,0 +1,31 @@
+<%
+  // The path segment tracks wherever the reader currently is.
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  var here = '~';
+  if (page.layout === 'post') {
+    here = '~/posts/' + (page.slug || page.title || '');
+  } else if (page.tag) {
+    here = '~/tags/' + page.tag;
+  } else if (page.category) {
+    here = '~/categories/' + page.category;
+  } else if (page.archive) {
+    here = '~/archives' + (page.year ? '/' + page.year : '') + (page.month ? '/' + pad(page.month) : '');
+  } else if (page.path && page.path !== 'index.html' && !/^page\/\d+/.test(page.path)) {
+    here = '~/' + page.path.replace(/index\.html$/, '').replace(/\/$/, '');
+  }
+  if (here.length > 42) here = here.substring(0, 41) + '…';
+  if (page.current > 1) here += ' [' + page.current + ']';
+%>
+<header class="site-header">
+  <div class="promptline" aria-hidden="true">
+    <span class="seg seg-host"><%= theme.prompt_host || config.title %></span><span
+      class="seg seg-path"><%= here %></span>
+  </div>
+
+  <h1 class="site-title"><a href="<%- url_for('/') %>"><%= config.title %></a></h1>
+  <% if (config.subtitle){ %><p class="site-subtitle"><%= config.subtitle %></p><% } %>
+
+  <nav class="site-nav">
+    <% for (var name in theme.menu){ %><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a><% } %>
+  </nav>
+</header>

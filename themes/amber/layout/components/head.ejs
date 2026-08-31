@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <%
+    var title = [];
+    if (page.current > 1) title.push('page ' + page.current);
+    if (page.title) title.push(page.title);
+    if (page.category) title.push(page.category);
+    if (page.tag) title.push(page.tag);
+    if (page.archive) title.push(page.year ? page.year + (page.month ? '/' + page.month : '') : 'archives');
+    title.push(config.title);
+    if (config.subtitle) title.push(config.subtitle);
+  %>
+  <title><%= title.join(' | ') %></title>
+
+  <% if (config.author){ %><meta name="author" content="<%= config.author %>"><% } %>
+
+  <% if (page.description){ %>
+  <meta name="description" content="<%= page.description %>">
+  <% } else if (config.description){ %>
+  <meta name="description" content="<%= config.description %>">
+  <% } else if (page.excerpt){ %>
+  <meta name="description" content="<%= strip_html(page.excerpt).trim().substring(0, 200) %>">
+  <% } else if (page.content){ %>
+  <meta name="description" content="<%= strip_html(page.content).trim().substring(0, 200) %>">
+  <% } %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d0906">
+
+  <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
+  <meta property="og:site_name" content="<%= config.title %>"/>
+  <meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>"/>
+
+  <link rel="icon" href="<%- url_for('/favicon.svg') %>" type="image/svg+xml">
+  <% if (theme.feed){ %>
+  <link rel="alternate" href="<%- url_for(theme.feed) %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" type="text/css">
+</head>

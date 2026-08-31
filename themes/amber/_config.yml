@@ -1,0 +1,27 @@
+# amber — a CRT terminal theme for Hexo
+# Layout is deliberately minimal: text and code, nothing else.
+
+menu:
+  home: /
+  archives: /archives
+  about: /about-me
+
+# The host segment of the prompt line above the site title.
+# The path segment after it is generated from the page being viewed.
+prompt_host: c64.io
+
+# CRT eye candy. Set to false for flat, effect-free amber.
+crt:
+  scanlines: true
+  glow: true
+  vignette: true
+  flicker: false
+
+# Show post excerpts on the index page. false = bare `ls`-style listing.
+index_excerpts: true
+
+# Path to an Atom feed, if you install hexo-generator-feed. Leave blank for none.
+feed: ''
+
+# Footer line
+footer_note: 'built with hexo · no javascript · no tracking'
